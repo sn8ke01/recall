@@ -1,5 +1,5 @@
-# Recall
-Portable, rapid, inline, cmd syntax note taking and recall (poc) program.
+# Recall (POC)
+Portable, rapid, inline, cmd syntax note collection and search applicatin
 
 It should be able to handle complex regex and multi-line cmds.
 
@@ -34,7 +34,9 @@ recall.py -l language -c cmd -s syntax -p purpose -n notes
 
 ## Features
 Store notes as JSON
+
 Export JSON as CSV
+
 When a note is stored an ID is associated to it for internal reference
 
 ## Usage requirements
