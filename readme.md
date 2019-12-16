@@ -32,6 +32,11 @@ recall.py -l language -c cmd -s syntax -p purpose -n notes
 
 **Notes** any additional information about the cmd that I may want to recall or use to catagorize and search
 
+## Functions
+**collection** store note.  This function can be utilized as described above.
+
+**search** recall note.  Usage: `recall.py search "search term"` 
+
 ## Features
 Store notes as JSON
 
