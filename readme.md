@@ -1,5 +1,7 @@
 # Recall (POC)
-Portable, rapid, inline, cmd syntax note collection and search applicatin
+Portable, rapid, inline, cmd syntax note collection and search applicatin.
+
+> The below represent ways in which the tool may or may not function as I build it out.  This readme.md is more of a braind dump of ideas.
 
 It should be able to handle complex regex and multi-line cmds.
 
