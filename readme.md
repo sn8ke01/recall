@@ -3,7 +3,7 @@ Portable, rapid, inline, cmd syntax note collection and search applicatin
 
 It should be able to handle complex regex and multi-line cmds.
 
-Examples:
+### Examples
 Note Taking
 ```python
 recall.py -l dig -s "dig $domain ANY +noall +answer +additional" -p "view all dns record types available"
