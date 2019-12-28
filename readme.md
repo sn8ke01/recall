@@ -1,9 +1,14 @@
 # Recall (POC)
 Portable, rapid, inline, cmd syntax note collection and search applicatin
+Portable, rapid, inline, cmd syntax note collection and search applicatin.
+> I've never learned that before!
+
+The below represent ways in which the tool may or may not function as I build it out.  This **readme.md** currenbtly exists more of a brain dump of ideas than anything else.
 
 It should be able to handle complex regex and multi-line cmds.
 
 Examples:
+### Examples
 Note Taking
 ```python
 recall.py -l dig -s "dig $domain ANY +noall +answer +additional" -p "view all dns record types available"
@@ -55,8 +60,11 @@ recall.py -l amass -s "amass -enum $domain" -p "enumerate subdomains"
 ```
 ## Internal Checks
 - Check if syntax already exists (or something similar already exists)
+<<<<<<< HEAD
 
 ## Other
 
 When a note is stored an ID is associated to it for internal reference
 
+=======
+>>>>>>> be3dbe34c6867ee91411e19ca90257a107846241
