@@ -58,7 +58,6 @@ recall.py -l amass -s "amass -enum $domain" -p "enumerate subdomains"
 ```
 ## Internal Checks
 - Check if syntax already exists (or something similar already exists)
-<<<<<<< HEAD
 
 ## Other
 
