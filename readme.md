@@ -63,6 +63,3 @@ recall.py -l amass -s "amass -enum $domain" -p "enumerate subdomains"
 ## Other
 
 When a note is stored an ID is associated to it for internal reference
-
-=======
->>>>>>> be3dbe34c6867ee91411e19ca90257a107846241
