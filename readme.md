@@ -13,14 +13,22 @@ Note Recall
 ```python
 recall.py -r "dns records"
 ```
-The desired output would be a formatted tables with all entries that included "dns" & "records"
-I need to design how the search parameter is read.
+The desired output would be all entries that included "dns" **or** "records"
+
+```bash
+dig @$nameSrv $domain #Bash #query a specific name server # dns
+dig $domain ANY +noall +answer #Bash #View all record types available #dns records
+dig $domain +trace #Bash #trace path taken to answer #dns answer trace
+dig -x $ip  #Bash #Reverse Lookup, Outputs domain name #dns reverse lookup
+```
+
+
 
 
 
 ## Intended usage
 ```python
-recall.py -l language -c cmd -s syntax -p purpose -n notes
+recall.py -l language -c cmd -s syntax -p purpose -t notes
 ```
 **Language** The source language or tool of the cmd ex: `PowerShell`
 
@@ -30,7 +38,7 @@ recall.py -l language -c cmd -s syntax -p purpose -n notes
 
 **Purpose** reason for using this cmd this particular way ex: `kill a single process using powershell`
 
-**Notes** any additional information about the cmd that I may want to recall or use to catagorize and search
+**Tags** any additional information about the cmd that I may want to recall or use to categorize and search
 
 ## Functions
 **collection** store note.  This function can be utilized as described above.
@@ -42,8 +50,6 @@ Store notes as JSON
 
 Export JSON as CSV
 
-When a note is stored an ID is associated to it for internal reference
-
 ## Usage requirements
 Language, Syntax, Purpose
 
@@ -53,3 +59,8 @@ recall.py -l amass -s "amass -enum $domain" -p "enumerate subdomains"
 ```
 ## Internal Checks
 - Check if syntax already exists (or something similar already exists)
+
+## Other
+
+When a note is stored an ID is associated to it for internal reference
+
