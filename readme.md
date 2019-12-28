@@ -22,10 +22,6 @@ dig $domain +trace #Bash #trace path taken to answer #dns answer trace
 dig -x $ip  #Bash #Reverse Lookup, Outputs domain name #dns reverse lookup
 ```
 
-
-
-
-
 ## Intended usage
 ```python
 recall.py -l language -c cmd -s syntax -p purpose -t notes
